@@ -1,0 +1,18 @@
+{
+  "name": "grokbot",
+  "private": true,
+  "description": "Bot HQ: a team of Hermes agents, each with its own screen on one Orgo computer, with Composio apps and xAI voice.",
+  "workspaces": ["server", "web"],
+  "scripts": {
+    "dev": "tsx server/src/index.ts",
+    "build": "npm run build -w web && npm run build -w server",
+    "start": "NODE_ENV=production node server/dist/index.js",
+    "typecheck": "npm run typecheck -w server && npm run typecheck -w web",
+    "lint": "npm run typecheck"
+  },
+  "engines": { "node": ">=22" },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

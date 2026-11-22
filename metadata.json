@@ -1,0 +1,5 @@
+{
+  "name": "Bot HQ",
+  "description": "A team of Hermes AI agents, each with its own desktop screen on a shared computer, connected apps with chat approvals, routines, library, and voice.",
+  "requestFramePermissions": ["microphone"]
+}
